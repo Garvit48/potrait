@@ -73,9 +73,9 @@ video.style.display = "none";
 //setInterval(edgeDetection, 0)
 
 let coordinates = []
-document.addEventListener("keydown", e => { 
+document.addEventListener("touchend", e => { 
     edgeDetection()
-    if (e.key == " "){
+    if (true){
     coordinates = get_pixels(e_ctx)
     elems.forEach(e => {
         if (coordinates.length == 0){
